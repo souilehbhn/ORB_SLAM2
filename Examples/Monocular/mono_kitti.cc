@@ -29,6 +29,9 @@
 
 #include"System.h"
 
+#include <unistd.h>
+
+
 using namespace std;
 
 void LoadImages(const string &strSequence, vector<string> &vstrImageFilenames,
@@ -119,7 +122,7 @@ int main(int argc, char **argv)
     cout << "mean tracking time: " << totaltime/nImages << endl;
 
     // Save camera trajectory
-    SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");    
+    SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
 
     return 0;
 }

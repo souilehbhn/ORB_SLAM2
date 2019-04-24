@@ -28,6 +28,9 @@
 
 #include<System.h>
 
+#include <unistd.h>
+
+
 using namespace std;
 
 void LoadImages(const string &strFile, vector<string> &vstrImageFilenames,
