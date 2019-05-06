@@ -107,7 +107,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
 add_executable(mono_tum
 Examples/Monocular/mono_tum.cc)
 target_link_libraries(mono_tum ${PROJECT_NAME})
-install(TARGETS ${PROJECT_NAME} DBoW2 g2o DESTINATION lib)
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
 install(TARGETS mono_tum DESTINATION bin)
 
 #add_executable(mono_kitti
